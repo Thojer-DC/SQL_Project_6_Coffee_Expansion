@@ -11,7 +11,7 @@ The goal of this project is to analyze the sales data of  Coffee, a company that
 ## Key Questions
 
 **Coffee Consumers Count** 
-- 1. How many people in each city are estimated to consume coffee, given that 25% of the population does?
+1. How many people in each city are estimated to consume coffee, given that 25% of the population does?
 ```SQL
    SELECT 
       city_name,
@@ -22,7 +22,7 @@ The goal of this project is to analyze the sales data of  Coffee, a company that
 
 
 **Total Revenue from Coffee Sales** 
-- 2. What is the total revenue generated from coffee sales across all cities in the last quarter of 2023?
+2. What is the total revenue generated from coffee sales across all cities in the last quarter of 2023?
 ```SQL
    SELECT
       ci.city_name,
@@ -42,7 +42,7 @@ The goal of this project is to analyze the sales data of  Coffee, a company that
 
 
 **Sales Count for Each Product**
-- 3. How many units of each coffee product have been sold?
+3. How many units of each coffee product have been sold?
 ```SQL
    SELECT 
       pd.product_name,
@@ -55,7 +55,7 @@ The goal of this project is to analyze the sales data of  Coffee, a company that
 ```
 
 **Average Sales Amount per City**
-- 4. What is the average sales amount per customer in each city?
+4. What is the average sales amount per customer in each city?
 ```SQL
    SELECT 
       ci.city_name,
@@ -74,7 +74,7 @@ The goal of this project is to analyze the sales data of  Coffee, a company that
 
 
 **City Population and Coffee Consumers (25%)**
-- 5. Provide a list of cities along with their populations and estimated coffee consumers.
+5. Provide a list of cities along with their populations and estimated coffee consumers.
 ```SQL
    WITH city_table AS
    (
@@ -110,7 +110,7 @@ The goal of this project is to analyze the sales data of  Coffee, a company that
 
 
 **Top Selling Products by City**
-- 6. What are the top 3 selling products in each city based on sales volume?
+6. What are the top 3 selling products in each city based on sales volume?
 ```SQL
    SELECT *
    FROM
@@ -135,7 +135,7 @@ The goal of this project is to analyze the sales data of  Coffee, a company that
 
 
 **Customer Segmentation by City**
-- 7. How many unique customers are there in each city who have purchased coffee products?
+7. How many unique customers are there in each city who have purchased coffee products?
 ```SQL
    SELECT 
       c.city_name,
@@ -153,7 +153,7 @@ The goal of this project is to analyze the sales data of  Coffee, a company that
 
 
 **Average Sale vs Rent**
-- 8. Find each city and their average sale per customer and avg rent per customer
+8. Find each city and their average sale per customer and avg rent per customer
 ```SQL
    SELECT
       c.city_name,
@@ -170,7 +170,7 @@ The goal of this project is to analyze the sales data of  Coffee, a company that
 
 
 **Monthly Sales Growth** 
-- 9. Sales growth rate: Calculate the percentage growth (or decline) in sales over different time periods (monthly) by each city.
+9. Sales growth rate: Calculate the percentage growth (or decline) in sales over different time periods (monthly) by each city.
 ```SQL
    WITH monthly_sales 
    AS
@@ -212,7 +212,7 @@ The goal of this project is to analyze the sales data of  Coffee, a company that
 
 
 **Market Potential Analysis**
-- 10. Identify top 3 city based on highest sales, return city name, total sale, total rent, total customers, estimated coffee consumer
+10. Identify top 3 city based on highest sales, return city name, total sale, total rent, total customers, estimated coffee consumer
 ```SQL
    SELECT 
       c.city_name,	
